@@ -1,0 +1,13 @@
+{
+    "builds": [{
+        "src": "Newton_Portfolio_Final_v1/wsgi.py",
+        "use": "@vercel/python",
+        "config": { "maxLambdaSize": "15mb", "runtime": "python3.9" }
+    }],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "Newton_Portfolio_Final_v1/wsgi.py"
+        }
+    ]
+}
