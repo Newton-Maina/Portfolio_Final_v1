@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-rj@1bmxe1mn3k5odpnt980y0il)tf$3w%juuh@)sv*3iirde6f
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.vercel.app']
+ALLOWED_HOSTS = ['.vercel.app', '127.0.0.1', 'localhost']
 
 
 # Application definition
@@ -76,8 +76,12 @@ WSGI_APPLICATION = 'Newton_Portfolio_Final_v1.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'railway',
+        'USER': 'postgres',
+        'PASSWORD': 'YgDMjlVhVRFnBmsBouPwqHeaYBTWDrBp',
+        'HOST': 'viaduct.proxy.rlwy.net',
+        'PORT': '48870',
     }
 }
 
@@ -119,10 +123,8 @@ USE_TZ = True
 STATIC_URL = 'static/'
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATICFILES_DIRS = os.path.join(BASE_DIR, 'The_Website_v1', 'static'),
 
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'The_Website_v1', 'static'),
-]
 
 
 # Default primary key field type
