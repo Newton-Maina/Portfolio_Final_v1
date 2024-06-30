@@ -1,0 +1,128 @@
+{% extends 'layout.html' %}
+
+{% load static %}
+
+{% block title %}
+
+    <title> Welcome || Newton Maina's Portfolio </title>
+
+{% endblock %}
+
+
+{% block body %}
+    <!-- Homepage Section Start -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="header-text">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2>|| Welcome to my Portfolio ||</h2>
+                        <h4>  Exquisite Software Engineering.</h4>
+                        <h1><span class="icon"><i class="icofont-hand"></i> <span class="wave"></span></span>Hello there. I'm <span>Newton Maina</span><span><h2 class= "text-white-50">An artisan of code from the captivating lands of Kenya.</h2> </span></h1>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="framing">
+                            <div class="any-frame">
+                                <video autoplay loop muted style="opacity: 0.7" class="img-fluid">
+                                    <source src="{% static 'images/animation-1.webm' %}" type="video/webm">
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="intro-section">
+        <div class="container">
+            <h2 class="play-write-au-vic" style="text-align: center">|| Happy Browsing ||</h2>
+        </div>
+    </section>
+
+
+     <!-- Interactive Service Sub-Section Start -->
+    <section class="interactive-section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="framing">
+                        <div class="any-frame">
+                            <video autoplay loop muted style="opacity: 0.7" class="img-fluid">
+                                <source src="{% static 'images/animation-2.webm' %}" type="video/webm">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="service-offering">
+                        <h1>Hi there!<span class="header-text span h1 ml-4">Are you looking for:</span></h1>
+                        <h5 id="service-text" class="typing-animation"> A promising UI/UX design?...,
+                            A flexible developed web interface?...,
+                            Splendid Quality Assurance?...,
+                            A long-term contract or collaboration with a seasoned professional?...</h5>
+                        <h5 class="sizing justify-content-center align-items-center mt-3 text-white-50" style="font-family: 'Poppins', sans-serif">
+                            <i class="icofont-addons"></i>...As an innovative software engineer, I am deeply committed to collaboration and dedicated to crafting seamless solutions and services.<br><br>
+                            <i class="icofont-addons"></i>...With a relentless drive for excellence, I am constantly seeking to push the boundaries of technology to deliver cutting-edge solutions that exceed expectations.<br><br>
+                            <i class="icofont-addons"></i>...By fostering a culture of cooperation and open communication, I thrive on working closely with clients and team members alike to understand their needs and create tailored solutions that address their unique challenges.<br><br>
+                            <i class="icofont-addons"></i>...Together, let's embark on a journey towards innovation and excellence,
+                            where every step we take is guided by a shared vision of creating impactful and transformative solutions.
+                        </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta position-relative">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="counter-stat">
+                            <i class="icofont-doctor"></i>
+                            <span class="counter h3">120</span>+
+                            <p>Satisfied Clients</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="counter-stat">
+                            <i class="icofont-flag"></i>
+                            <span class="counter h3">80</span>+
+                            <p>Services Offered</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="counter-stat">
+                            <i class="icofont-badge"></i>
+                            <span class="counter h3">50</span>+
+                            <p>Completed Projects</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="counter-stat">
+                            <i class="icofont-globe"></i>
+                            <span class="counter h3">3</span>+
+                            <p>Years Of Experience</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Homepage Section End -->
+
+{% endblock %}
+
+{% block js_block %}
+    
+    <script type="text/javascript" src="{% static 'js/main.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/index.js' %}"></script>
+
+{% endblock %}

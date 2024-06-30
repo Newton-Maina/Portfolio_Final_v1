@@ -1,0 +1,73 @@
+{% extends 'layout.html' %}
+
+{% load static %}
+
+{% block title %}
+
+    <title> Newton Maina || Portfolio </title>
+
+{% endblock %}
+
+{% block body %}
+
+    <div class="container">
+        <div class="portfolio-section py-5">
+            <section class="intro-section">
+                <div class="big-circle">
+                    <div class="small-circle"></div>
+                </div>
+                <div class="retext">
+                    <h1>-Portfolio Showcase-</h1>
+                </div>
+            </section>
+            <hr style="margin-bottom: 70px">
+
+            <div class="portfolio-item">
+                <div class="portfolio-content">
+                    <h2 class="portfolio-title">Project Title</h2>
+                    <p class="portfolio-description">Case Name: Amazing Project<br>Description: This project showcases...</p>
+                    <a href="#" class="view-case-button">View Full Case</a>
+                </div>
+                <div class="portfolio-images">
+                    <img src="{% static 'images/about_04.jpg' %}" alt="Image 1">
+                    <img src="{% static 'images/about_06.jpg' %}" alt="Image 2">
+                    <img src="{% static 'images/about_05.jpg' %}" alt="Image 3">
+                </div>
+            </div>
+
+            <div class="portfolio-item">
+                <div class="portfolio-content">
+                    <h2 class="portfolio-title">Project Title</h2>
+                    <p class="portfolio-description">Case Name: Amazing Project<br>Description: This project showcases...</p>
+                    <a href="#" class="view-case-button">View Full Case</a>
+                </div>
+                <div class="portfolio-images">
+                    <img src="{% static 'images/about_04.jpg' %}" alt="Image 1">
+                    <img src="{% static 'images/about_06.jpg' %}" alt="Image 2">
+                    <img src="{% static 'images/about_05.jpg' %}" alt="Image 3">
+                </div>
+            </div>
+
+            <div class="portfolio-item">
+                <div class="portfolio-content">
+                    <h2 class="portfolio-title">Project Title</h2>
+                    <p class="portfolio-description">Case Name: Amazing Project<br>Description: This project showcases...</p>
+                    <a href="#" class="view-case-button">View Full Case</a>
+                </div>
+                <div class="portfolio-images">
+                    <img src="{% static 'images/about_04.jpg' %}" alt="Image 1">
+                    <img src="{% static 'images/about_06.jpg' %}" alt="Image 2">
+                    <img src="{% static 'images/about_05.jpg' %}" alt="Image 3">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}
+
+{% block js_block %}
+
+    <script type="text/javascript" src="{% static 'js/main.js' %}"></script>
+
+{% endblock %}

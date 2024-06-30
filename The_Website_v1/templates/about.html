@@ -1,0 +1,178 @@
+{% extends 'layout.html' %}
+
+{% load static %}
+
+{% block title %}
+
+    <title> Newton Maina || About </title>
+
+{% endblock %}
+
+{% block body %}
+
+   <!-- About Section Start -->
+<div class="about-section py-5">
+    <div class="container">
+        <section class="intro-section">
+            <div class="big-circle">
+                <div class="small-circle">
+                </div>
+            </div>
+            <div class="retext">
+                <h1>-Learn More About Me-</h1>
+            </div>
+        </section>
+        <hr style="margin-bottom: 70px">
+        <!-- Biography Section -->
+        <div class="biography-section row align-items-center" id="biography">
+            <div class="col-md-6">
+                <div class="about-frame">
+                    <img src="{% static 'images/About_me.jpg' %}" alt="about me img" class="img-fluid rounded shadow">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="biography-text text-center">
+                    <h1 class="super-heading">Who's Newton?</h1>
+                    <div class="lines d-flex align-items-center justify-content-center mt-3">
+                        <div class="line"></div>
+                        <div class="diamond mx-3"></div>
+                        <div class="line"></div>
+                    </div>
+                    <p class="mt-4">Currently in study progress in KCA University.
+                        I am an enthusiastic, self-motivated, reliable, responsible, and hardworking person.
+                        I yearn to join up with companies and work maturely with teams to make use of opportunities and make them successful in favor of the company.
+                        Flexible in my working hours, being able to work all day time, in evenings, and weekends too. Keen and very willing to learn new skills, very dependable,
+                        and often seek new responsibilities within a wide range of employment areas.</p>
+
+                    <div class="skills mt-5">
+                        <h1 class="super-heading">Skills & Interests</h1>
+                        <div class="skill-btn justify-content-center mt-4">
+                            <button class="btn btn-light bg-transparent rounded-pill py-2 mb-3 px-4 ms-lg-4 text-white-50">Wordpress</button>
+                            <button class="btn btn-light bg-transparent rounded-pill py-2 mb-3 px-4 ms-lg-4 text-white-50">Amazon WS</button>
+                            <button class="btn btn-light bg-transparent rounded-pill py-2 mb-3 px-4 ms-lg-4 text-white-50">Networking</button>
+                            <button class="btn btn-light bg-transparent rounded-pill py-2 mb-3 px-4 ms-lg-4 text-white-50">Figma DS</button>
+                            <button class="btn btn-light bg-transparent rounded-pill py-2 mb-3 px-4 ms-lg-4 text-white-50">UI/UX DS</button>
+                            <button class="btn btn-light bg-transparent rounded-pill py-2 mb-3 px-4 ms-lg-4 text-white-50">Web DS/Dev</button>
+                            <button class="btn btn-light bg-transparent rounded-pill py-2 mb-3 px-4 ms-lg-4 text-white-50">Graphic DS</button>
+                            <button class="btn btn-light bg-transparent rounded-pill py-2 mb-3 px-4 ms-lg-4 text-white-50">Wordpress</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Education Section -->
+        <div class="education-section row align-items-center mt-5" id="education">
+            <hr style="margin-top: 80px">
+            <div class="col-md-6">
+                <h1 class="super-heading text-center"><span><i class="icofont-education"></i></span> || EDUCATION</h1>
+                <div class="lines d-flex align-items-center justify-content-center mt-3">
+                    <div class="line"></div>
+                    <div class="diamond mx-3"></div>
+                    <div class="line"></div>
+                </div>
+                <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            </div>
+
+            <div class="col-md-6" style="margin-top: 50px">
+                <p class="rubik-lines-regular">2017 - 2024</p>
+                <div class="listings">
+                    <h2 class="icofont-double-right">Professional Certificates</h2>
+                    <ol>
+                        <li><h5>Amazon Web Services (AWS) Cloud Practitioner</h5></li>
+                        <li><h5>Web Development Django-Python</h5></li>
+                        <li><h5>Cisco Certified Network Associate (CCNA)</h5></li>
+                    </ol>
+
+                    <h2 class="icofont-double-right">Bachelors Degree</h2>
+                    <p class="text-center">Bachelors Software Development | KCA University | 2025</p>
+
+                    <h2 class="icofont-double-right">High School Studies</h2>
+                    <p class="text-center">Completion Certificate | Kiambu High School | 2021</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Experience Section -->
+        <div class="experience-section row align-items-center mt-5" id="experience">
+            <hr style="margin-top: 80px">
+            <div class="col-md-6">
+                <h1 class="super-heading text-center">MY EXPERIENCE</h1>
+                <div class="lines d-flex align-items-center justify-content-center mt-3">
+                    <div class="line"></div>
+                    <div class="diamond mx-3"></div>
+                    <div class="line"></div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h1 class="rubik-lines-regular">2022-2025</h1>
+            </div>
+
+            <div class="row align-items-center mt-4 text-center">
+                <div class="btn-group d-flex justify-content-center">
+                    <button class="btn btn-light bg-transparent rounded-pill py-2 mb-3 mr-2 px-4 ms-lg-4 text-white-50 active" style="font-weight: 5" data-content="general" onclick="showContent('general')">General</button>
+                    <button class="btn btn-light bg-transparent rounded-pill py-2 mb-3 mr-2 px-4 ms-lg-4 text-white-50" style="font-weight: 5" data-content="voluntary" onclick="showContent('voluntary')">Voluntary</button>
+                    <button class="btn btn-light bg-transparent rounded-pill py-2 mb-3 px-4 ms-lg-4 text-white-50" style="font-weight: 5" data-content="hired" onclick="showContent('hired')">Hired-Basis</button>
+                </div>
+                <div class="content" id="general">
+                    <div>
+                        <div class="visual text-center">
+                            <p class="visual-text">|| General - Work Experience ||</p>
+                        </div>
+                        <p style="font-size: xx-large"><span><i class="icofont-double-right"></i></span><small>Industrial Electoral And Boundaries Commission (IEBC) </small></p>
+                        <p class="text-light">Clerk Assistant || August - 2022</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+
+                    <div>
+                        <p style="font-size: xx-large"><span><i class="icofont-double-right"></i></span><small>Crystal Computers Limited</small></p>
+                        <p class="text-light">Receptionist & Tutor || May - September 2023</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+
+                <div class="content" id="voluntary" style="display: none">
+                    <div>
+                        <div class="visual text-center">
+                            <p class="visual-text">|| Voluntary - Work Experience ||</p>
+                        </div>
+                        <p style="font-size: xx-large"><span><i class="icofont-double-right"></i></span><small>Kiambu High School Alumni Foundation</small></p>
+                        <p class="text-light">IT Support & Maintenance || June 2024 - Current </p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+
+                <div class="content" id="hired" style="display: none">
+                    <div>
+                        <div class="visual text-center">
+                            <p class="visual-text">|| Hired Basis - Work Experience ||</p>
+                        </div>
+                        <p style="font-size: xx-large"><span><i class="icofont-double-right"></i></span><small>Safaricom PLC</small></p>
+                        <p class="text-light">Backend Developer Intern || October - December 2024</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- About Section End -->
+
+
+
+{% endblock %}
+
+{% block js_block %}
+
+    <script type="text/javascript" src="{% static 'js/main.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/about.js' %}"></script>
+
+{% endblock %}
