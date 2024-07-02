@@ -1,0 +1,1 @@
+web: gunicorn Newton_Portfolio_Final_v1.wsgi
