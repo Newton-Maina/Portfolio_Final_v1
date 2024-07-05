@@ -44,6 +44,7 @@
     margin-left: 150px;
     width: 200px;
 }
+
 .header-text{
     margin-top: 20%;
     font-size: 30px;
@@ -64,7 +65,7 @@
     margin-right: 100px;
     font-size: 30px;
     margin-top: 30px;
-    @media (max-width: 768px){ font-size: 18px}
+    @media (max-width: 768px){ font-size: 20px}
 }
 .header-text span{
     color: #046c6c;
@@ -305,9 +306,23 @@
     border: none;
     border-radius: 10px;
     margin-left: 10px;
+
     background-color: rgba(4,108,108,0.5);
 
 }
+.any-frame-1{
+    height: 100%;
+    width: 97%;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    background-color: rgba(4,108,108,0.5);
+    @media (min-width:1200px)
+    {
+        margin-top: 80px
+    }
+}
+
 
 
 .service-offering {
@@ -509,7 +524,7 @@
 
 
 .retext {
-    color: #fff3cd;
+    color: white;
     font-family: "Playwrite AU VIC", system-ui;
     font-size: 1rem;
     font-weight: bold;
@@ -535,7 +550,7 @@
     font-size: 36px;
     font-weight: 600;
     padding: 0.5rem 1rem;
-    color: #fff3cd;
+    color: white;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -549,13 +564,13 @@
 .line {
     width: 100px;
     height: 2px;
-    background-color: #fff3cd;
+    background-color: white;
 }
 
 .diamond {
     width: 20px;
     height: 20px;
-    background-color: #fff3cd;
+    background-color: white;
     top: calc(50% - 10px);
     left: calc(50% - 10px);
     transform: translate(0%, 0%);
@@ -572,13 +587,13 @@
     font-size: 16px;
     line-height: 1.5;
     margin-top: 20px;
-    color: #fff3cd;
+    color: white;
 }
 
 .skills {
     margin-top: 40px;
     padding-top: 20px;
-    border-top: 2px solid #fff3cd;
+    border-top: 2px solid white;
 }
 
 .content {
@@ -587,7 +602,7 @@
 }
 
 .content p {
-    color: #fff3cd;
+    color: white;
 }
 
 .skill-btn{
@@ -609,7 +624,7 @@
 }
 
 .icofont-education, .icofont-double-right {
-    color: #fff3cd;
+    color: white;
 }
 
 ol {
@@ -618,17 +633,17 @@ ol {
 }
 
 ol li h5 {
-    color: #fff3cd;
+    color: white;
 }
 
 .text-center.text-white-50 {
-    color: #fff3cd !important;
+    color: white !important;
     text-align: left;
 }
 
 .listings {
     padding: 20px;
-    color: #fff3cd;
+    color: white;
 }
 
 .listings h2 {
@@ -763,7 +778,7 @@ ol li h5 {
     height: auto;
     position: relative;
     overflow: hidden;
-    background-image: url('../images/background.jpg'); /* Background image with opacity */
+    background-image: url('../images/background.webp'); /* Background image with opacity */
     background-size: cover;
     background-position: center;
     margin-bottom: 50px;
@@ -907,6 +922,45 @@ ol li h5 {
 }
 
 /* ----------Portfolios end --------*/
+
+/* ----------Contact Start --------*/
+
+.contact-form {
+    padding: 20px;
+}
+.form-controller {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    width: 100%;
+}
+
+.form-controller label {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.form-controller input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-group input {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+.form-group textarea {
+    color: white;
+}
+
+
+
+/* ----------Contact end --------*/
 
 /* ----------Footer Start --------*/
 .footer {
