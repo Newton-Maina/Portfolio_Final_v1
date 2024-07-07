@@ -41,6 +41,13 @@
             <!-- Form Column -->
             <div class="col-md-6">
                 {% if name %}
+                    {% if success_message %}
+                        <p class="text-success">{{ success_message }}</p>
+                    {% endif %}
+
+                    {% if error_message %}
+                        <p class="text-danger">{{ error_message }}</p>
+                    {% endif %}
                     <div id="thank-you-message">
                         <center style="margin-top: 20px">
                             <h2 class="play-write-au-vic">
