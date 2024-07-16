@@ -56,7 +56,7 @@
                 <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
                     <div class="d-inline-flex align-items-center" style="height: 45px;">
                         <ul>
-                            <li class="list-inline-item"><a href="mailto:newtonmainag@gmail.com"><i class="icofont-support-faq mr-2 text-white "></i>newtonmainag@gmail.com</a></li>
+                            <li class="list-inline-item"><a  class="text-white-50" href="mailto:newtonmainag@gmail.com"><i class="icofont-support-faq mr-2 text-white "></i>newtonmainag@gmail.com</a></li>
                             <li class="list-inline-item text-lg-center"><i class="icofont-location-pin mr-2"></i>Address 32-East-Drive, Roysambu, Nairobi-Kenya</li>
                         </ul>
                         </div>
@@ -65,7 +65,7 @@
                     <div class="d-inline-flex align-items-center" style="height: 45px;">
                        <div class="flex-lg-column">
                            <div class="text-lg-right top-right-bar mt-2 mt-lg-0">
-                               <a href="tel:+254-789-678 905``
+                               <a class="text-white-50" href="tel:+254-789-678 905``
                                .   -.
                                .1..." ><small>
                                    <span class="text-white-50">Call Now : </span>
@@ -91,10 +91,10 @@
                     <div class="navbar-nav ms-auto py-0">
                         <ul class="navbar-nav mr-auto ml-5">
                             <li><a href="{% url 'The_Website_v1:home' %}" class="nav-item{% if navbar == 'home' %}nav-item nav-link active{% endif %} nav-item nav-link">Home</a></li>
-                            <li><a href="{% url 'The_Website_v1:about' %}" class="nav-item{% if navbar == 'about' %}nav-item nav-link active{% endif %} nav-item nav-link">About</a></li>
+                            <li><a href="{% url 'The_Website_v1:about' %}" class="nav-item{% if navbar == 'about' %}nav-item nav-link active{% endif %} nav-item nav-link">My Story</a></li>
                             <li><a href="{% url 'The_Website_v1:services' %}" class="nav-item{% if navbar == 'services' %}nav-item nav-link active{% endif %} nav-item nav-link">Services</a></li>
                             <li><a href="{% url 'The_Website_v1:portfolio' %}" class="nav-item{% if navbar == 'portfolio' %}nav-item nav-link active{% endif %} nav-item nav-link">Portfolio</a></li>
-                            <li><a href="{% url 'The_Website_v1:contact' %}" class="nav-item{% if navbar == 'contact' %}nav-item nav-link active{% endif %} nav-item nav-link">Contact</a></li>
+                            <li><a href="{% url 'The_Website_v1:contact' %}" class="nav-item{% if navbar == 'contact' %}nav-item nav-link active{% endif %} nav-item nav-link">Blog/Articles</a></li>
                         </ul>
                     </div>
                     <ul class="navbar-nav ml-lg-5 ml-4 py-0">
@@ -118,11 +118,12 @@
                     <div class="footer-logo mb-4">
                         <img src="{% static 'images/logo_01.png' %}" alt="Newton's Logo" class="img-fluid" width="160" height="80">
                     </div>
-                    <p>Ensuring clear and concise blah blah blah
-                    Ensuring clear and concise blah blah blah
-                    Ensuring clear and concise blah blah blah
-                    Ensuring clear and concise blah blah blah
-                    Ensuring clear and concise blah blah blah</p>
+                    <p>
+                        Get a full view on both the mobile and
+                        desktop. Any recommendations, tweaks or
+                        compliments about the website will be highly
+                        appreciated via the contact page. Your emails
+                        are always welcome. Thank You!</p>
                 </div>
             </div>
 
@@ -132,9 +133,10 @@
                     <div class="divider links mb-4"></div>
 
                     <ul class="list-unstyled footer-menu list-group-horizontal">
-                        <li><a class="nav-link" href="{% url 'The_Website_v1:about' %}"><i class="icofont-arrow-right"></i> About Me</a></li>
+                        <li><a class="nav-link" href="{% url 'The_Website_v1:about' %}"><i class="icofont-arrow-right"></i> My Story</a></li>
                         <li><a class="nav-link" href="{% url 'The_Website_v1:services' %}"><i class="icofont-arrow-right"></i> My Services</a></li>
                         <li><a class="nav-link" href="{% url 'The_Website_v1:portfolio' %}"><i class="icofont-arrow-right"></i> Portfolio</a></li>
+                        <li><a class="nav-link" href="{% url 'The_Website_v1:contact' %}"><i class="icofont-arrow-right"></i> Blog/Articles</a></li>
                         <li><a class="nav-link" href="{% url 'The_Website_v1:contact' %}"><i class="icofont-arrow-right"></i> Reach Out</a></li>
                     </ul>
                 </div>
@@ -188,21 +190,9 @@
 
 </footer>
 
-    <script src="{% static 'plugins/jquery/jquery.js' %}"></script>
-
-    <!-- Bootstrap 4.3.2 -->
-    <script src="{% static 'plugins/bootstrap/js/popper.js' %}"></script>
-    <script src="{% static 'plugins/bootstrap/js/bootstrap.min.js' %}"></script>
-    <script src="{% static 'plugins/counterup/jquery.easing.js' %}"></script>
-
-    <!-- Slick Slider -->
-    <script src="{% static 'plugins/slick-carousel/slick/slick.min.js' %}"></script>
-
-    <!-- Counterup -->
-    <script src="{% static 'plugins/counterup/jquery.waypoints.min.js' %}"></script>
-    <script src="{% static 'plugins/shuffle/shuffle.min.js' %}"></script>
-    <script src="{% static 'plugins/counterup/jquery.counterup.min.js' %}"></script>
-    <!-- Google Map -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" defer></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.counterup/jquery.counterup.min.js" defer></script>
 
 {% block js_block %}
 {% endblock %}

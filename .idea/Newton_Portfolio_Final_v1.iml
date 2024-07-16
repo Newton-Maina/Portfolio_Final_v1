@@ -20,6 +20,8 @@
     <orderEntry type="library" name="waypoints" level="application" />
     <orderEntry type="library" name="jquery.counterup" level="application" />
     <orderEntry type="library" name="bootstrap.bundle" level="application" />
+    <orderEntry type="library" name="popper.js" level="application" />
+    <orderEntry type="library" name="jquery-easing" level="application" />
   </component>
   <component name="PyDocumentationSettings">
     <option name="format" value="PLAIN" />

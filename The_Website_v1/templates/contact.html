@@ -45,9 +45,6 @@
                         <p class="text-success">{{ success_message }}</p>
                     {% endif %}
 
-                    {% if error_message %}
-                        <p class="text-danger">{{ error_message }}</p>
-                    {% endif %}
                     <div id="thank-you-message">
                         <center style="margin-top: 20px">
                             <h2 class="play-write-au-vic">
@@ -75,6 +72,9 @@
                             }, 15000);
                     </script>
                 {% else %}
+                    {% if error_message %}
+                        <p class="text-danger">{{ error_message }}</p>
+                    {% endif %}
                 <div class="text-center" style="margin-top: 20px">
                     <h1 class="play-write-au-vic" style="font-size: 30px">Aiming at Working Together?</h1>
                     <div class="lines d-flex align-items-center justify-content-center mt-3">

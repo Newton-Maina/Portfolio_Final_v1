@@ -3,15 +3,11 @@
 {% load static %}
 
 {% block title %}
-
-    <title> Newton Maina || Services </title>
-
+    <title>Newton Maina || Services</title>
 {% endblock %}
 
 {% block body %}
-
     <!-- Services Section Start -->
-
     <div class="service-section py-5">
         <div class="container">
             <section class="intro-section">
@@ -26,29 +22,25 @@
 
             <div class="row">
                 {% for service in services %}
-                    <div class="col-md-4 mb-4">
-                        <div class="service-item">
-                            <div class="service-icon">
-                                <i class="{{ service.icon }}"></i>
-                            </div>
-                            <div class="service-content">
-                                <h3>{{ service.name }}</h3>
-                                <p>{{ service.description }}</p>
-                                <a href="#" class="btn btn-primary">Learn More</a>
-                            </div>
+                <div class="col-md-4 mb-4">
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="{{ service.icon }}"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3>{{ service.name }}</h3>
+                            <p>{{ service.description }}</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
                         </div>
                     </div>
+                </div>
                 {% endfor %}
             </div>
         </div>
     </div>
-
     <!-- Services Section End -->
-
 {% endblock %}
 
 {% block js_block %}
-
     <script type="text/javascript" src="{% static 'js/main.js' %}"></script>
-
 {% endblock %}
