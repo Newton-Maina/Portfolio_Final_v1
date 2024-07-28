@@ -8,11 +8,85 @@
     background-size: cover;
     color: white;
     @media (max-width: 768px){
-        background-image: none;
-        background-color: rgba(0,0,0,0.975);
+        background-image: none !important;
+        background-color: rgba(0,0,0,0.975) !important;
     }
 
 }
+
+.tech-stack-section {
+    padding: 5rem 0; /* Vertical padding for spacing */
+}
+
+.tech-stack-section .section-title {
+    font-size: 2rem; /* Size of the section title */
+    margin-bottom: 2rem; /* Space below the title */
+    color: #333; /* Darker color for text */
+}
+
+.tech-stack-section .tech-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.tech-stack-section .tech-icon img {
+    width: 65px; /* Fixed width for icons */
+    height: 65px; /* Fixed height for icons */
+    object-fit: contain;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+.tech-stack-section .tech-icon img:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+.tech-stack-section h4 {
+    font-size: 1.1rem; /* Font size for technology names */
+    color: #555; /* Lighter color for text */
+    margin: 0; /* Remove default margins */
+}
+
+/* Responsive Grid Layout */
+@media (max-width: 576px) {
+    .tech-stack-section .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .tech-stack-section .tech-item {
+        flex: 1 0 30%; /* Two items per row on small screens */
+    }
+}
+
+@media (min-width: 768px) {
+    .tech-stack-section .tech-item {
+        flex: 1 0 30%; /* Three items per row on medium screens */
+    }
+}
+
+@media (min-width: 992px) {
+    .tech-stack-section .tech-item {
+        flex: 1 0 22%; /* Four items per row on larger screens */
+    }
+}
+
+@media (min-width: 1200px) {
+    .tech-stack-section .tech-item {
+        flex: 1 0 18%; /* Five items per row on extra-large screens */
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .tech-stack-section .tech-item {
+        margin-bottom: 20px;
+    }
+}
+
 .pagination {
     margin-top: 20px;
     text-align: center;
@@ -148,7 +222,7 @@
 }
 
 .sticky-top.navbar-light {
-    background-color: rgba(4,15,19,0.7); /* Dull transparent gray color */
+    background-color: rgba(4,15,19,0.7);
 }
 
 .navbar-light .navbar-brand h1 {
@@ -720,12 +794,21 @@ ol li h5 {
 /* ----------About End-------- */
 
 /* ----------Buttons-------- */
-
 .btn.btn-light {
     position: relative;
     overflow: hidden;
     background-color: #87CEEB;
     border-color: #87CEEB;
+    max-width: 100%;
+}
+
+/* Button styling for screens below 412px */
+@media (max-width: 412px) {
+    .btn.btn-light {
+        padding: 8px 16px;
+        font-size: 15px;
+        max-width: 100%;
+    }
 }
 
 .btn.btn-light:before {

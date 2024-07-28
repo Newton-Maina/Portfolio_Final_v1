@@ -3,11 +3,8 @@
 {% load static %}
 
 {% block title %}
-
-    <title> Welcome || Newton Maina's Portfolio </title>
-
+    <title>Welcome || Newton Maina's Portfolio</title>
 {% endblock %}
-
 
 {% block body %}
     <!-- Homepage Section Start -->
@@ -17,10 +14,14 @@
                 <div class="row">
                     <div class="col-md-6">
                         <h2>|| Welcome to my Portfolio ||</h2>
-                        <h4>  Exquisite Software Engineering.</h4>
-                        <h1><span class="icon"><i class="icofont-hand"></i> <span class="wave"></span></span>Hello there. I'm <span>Newton Maina</span><span><h2 class= "text-white-50">An artisan of code from the captivating lands of Kenya.</h2> </span></h1>
+                        <h4>Exquisite Software Engineering.</h4>
+                        <h1><span class="icon"><i class="icofont-hand"></i> <span class="wave"></span></span>Hello there. I'm <span>Newton Maina</span><span><h2 class="text-white-50">An artisan of code from the captivating lands of Kenya.</h2></span></h1>
+                        <!-- Buttons -->
+                        <div class="button-group mt-4 mb-4">
+                            <a href="{% static 'files/My Resume.pdf' %}" class="btn btn-primary" download>Download CV</a>
+                            <a href="{% url 'The_Website_v1:portfolio' %}" class="btn btn-primary">View Projects</a>
+                        </div>
                     </div>
-
                     <div class="col-md-6">
                         <div class="framing">
                             <div class="any-frame">
@@ -35,14 +36,13 @@
         </div>
     </section>
 
-    <section class="intro-section">
+    <section class="intro-section mt--5">
         <div class="container">
             <h2 class="play-write-au-vic" style="text-align: center">|| Happy Browsing ||</h2>
         </div>
     </section>
 
-
-     <!-- Interactive Service Sub-Section Start -->
+    <!-- Interactive Service Sub-Section Start -->
     <section class="interactive-section">
         <div class="container-fluid">
             <div class="row">
@@ -58,7 +58,7 @@
                 <div class="col-md-6">
                     <div class="service-offering">
                         <h1>Hi there!<span class="header-text span h1 ml-4">Are you looking for:</span></h1>
-                        <h5 id="service-text" class="typing-animation"> A promising UI/UX design?...,
+                        <h5 id="service-text" class="typing-animation">A promising UI/UX design?...,
                             A flexible developed web interface?...,
                             Splendid Quality Assurance?...,
                             A long-term contract or collaboration with a seasoned professional?...</h5>
@@ -114,15 +114,152 @@
             </div>
         </div>
     </section>
-
-
     <!-- Homepage Section End -->
+
+    <!-- Services Section -->
+    <section class="services-section">
+        <div class="container">
+            <h2 class="text-center mb-4">My Services</h2>
+            <div class="service-item row">
+                <div class="col-md-4">
+                    <div class="service-item">
+                        <h4>UI and UX Design</h4>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-item">
+                        <h4>Web Development</h4>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-item">
+                        <h4>Quality Assurance</h4>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-item">
+                        <h4>Collaboration</h4>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-item">
+                        <h4>Consultancy</h4>
+                    </div>
+                </div>
+                <div class="text-center mt-4">
+                <a href="{% url 'The_Website_v1:services' %}" class="btn btn-primary">More About My Services</a>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack Section -->
+<section class="tech-stack-section py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">My Tech Stack</h2>
+        <div class="row text-center">
+            <!-- Tech Stack Item -->
+            <div class="col-md-3 col-sm-6 tech-item mb-4">
+                <div class="tech-icon">
+                    <img src="{% static 'icons/typescriptdef-official-svgrepo-com.svg' %}" alt="TypeScript">
+                </div>
+                <h4>TypeScript</h4>
+            </div>
+            <!-- Tech Stack Item -->
+            <div class="col-md-3 col-sm-6 tech-item mb-4">
+                <div class="tech-icon">
+                    <img src="{% static 'icons/javascript-svgrepo-com.svg' %}" alt="JavaScript">
+                </div>
+                <h4>JavaScript</h4>
+            </div>
+            <!-- Tech Stack Item -->
+            <div class="col-md-3 col-sm-6 tech-item mb-4">
+                <div class="tech-icon">
+                    <img src="{% static 'icons/python-svgrepo-com.svg' %}" alt="Python">
+                </div>
+                <h4>Python</h4>
+            </div>
+            <!-- Tech Stack Item -->
+            <div class="col-md-3 col-sm-6 tech-item mb-4">
+                <div class="tech-icon">
+                    <img src="{% static 'icons/java-4-logo-svgrepo-com.svg' %}" alt="Java">
+                </div>
+                <h4>Java</h4>
+            </div>
+            <!-- Tech Stack Item -->
+            <div class="col-md-3 col-sm-6 tech-item mb-4">
+                <div class="tech-icon">
+                    <img src="{% static 'icons/c.svg' %}" alt="C++">
+                </div>
+                <h4>C++</h4>
+            </div>
+            <!-- Tech Stack Item -->
+            <div class="col-md-3 col-sm-6 tech-item mb-4">
+                <div class="tech-icon">
+                    <img src="{% static 'icons/appwriteio-icon.svg' %}" alt="Appwrite">
+                </div>
+                <h4>Appwrite</h4>
+            </div>
+            <!-- Tech Stack Item -->
+            <div class="col-md-3 col-sm-6 tech-item mb-4">
+                <div class="tech-icon">
+                    <img src="{% static 'icons/html-5-svgrepo-com.svg' %}" alt="HTML/CSS">
+                </div>
+                <h4>HTML/CSS</h4>
+            </div>
+            <!-- Tech Stack Item -->
+            <div class="col-md-3 col-sm-6 tech-item mb-4">
+                <div class="tech-icon">
+                    <img src="{% static 'icons/android-color-svgrepo-com.svg' %}" alt="Android">
+                </div>
+                <h4>Android</h4>
+            </div>
+            <!-- Tech Stack Item -->
+            <div class="col-md-3 col-sm-6 tech-item mb-4">
+                <div class="tech-icon">
+                    <img src="{% static 'icons/djangoproject-svgrepo-com.svg' %}" alt="Django">
+                </div>
+                <h4>Django</h4>
+            </div>
+            <!-- Tech Stack Item -->
+            <div class="col-md-3 col-sm-6 tech-item mb-4">
+                <div class="tech-icon">
+                    <img src="{% static 'icons/node-js-svgrepo-com.svg' %}" alt="Node.js">
+                </div>
+                <h4>Node.js</h4>
+            </div>
+            <!-- Tech Stack Item -->
+            <div class="col-md-3 col-sm-6 tech-item mb-4">
+                <div class="tech-icon">
+                    <img src="{% static 'icons/react-svgrepo-com.svg' %}" alt="React">
+                </div>
+                <h4>React</h4>
+            </div>
+            <!-- Tech Stack Item -->
+            <div class="col-md-3 col-sm-6 tech-item mb-4">
+                <div class="tech-icon">
+                    <img src="{% static 'icons/next-dot-js-svgrepo-com.svg' %}" alt="Next.js">
+                </div>
+                <h4>Next.js</h4>
+            </div>
+        </div>
+    </div>
+</section>
+    <section>
+    <div class="text-center mb-4">
+        <h2>Let's Talk</h2>
+        <p class="play-write-au-vic">Wish to reach out?</p>
+        <p class="play-write-au-vic text-success">Or better yet leave a comment/ appreciation message?</p>
+    </div>
+    <div class="text-center mt-2 mb-5">
+        <a href="{% url 'The_Website_v1:contact' %}" class="btn btn-primary">Leave a message</a>
+    </div>
+
+    </section>
 
 {% endblock %}
 
 {% block js_block %}
-    
     <script async type="text/javascript" src="{% static 'js/main.js' %}"></script>
     <script async type="text/javascript" src="{% static 'js/index.js' %}"></script>
-
 {% endblock %}
