@@ -1,5 +1,5 @@
-from django.shortcuts import render
-from .models import Service, Project
+from django.shortcuts import render, get_object_or_404
+from .models import Service, Project, ProjectDetail
 from django.core.mail import send_mail, BadHeaderError
 from socket import gaierror
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
@@ -20,8 +20,8 @@ def service(request):
 
 
 def portfolio(request):
-    projects_list = Project.objects.all()  # Fetch all projects
-    paginator = Paginator(projects_list, 3)  # Adjust as needed
+    projects_list = Project.objects.all()
+    paginator = Paginator(projects_list, 3)
 
     page_number = request.GET.get('page')
     try:
@@ -73,3 +73,20 @@ def contact(request):
 
     else:
         return render(request, 'contact.html', {'navbar': 'contact'})
+
+
+def project_detail_layout(request):
+    return render(request, 'detailings/project-detail-layout.html')
+
+
+def project_detail(request, pk):
+    project = get_object_or_404(Project, pk=pk)
+    project_detail, created = ProjectDetail.objects.get_or_create(project=project)
+
+    previous_project = Project.objects.filter(pk__lt=pk).order_by('-pk').first()
+    next_project = Project.objects.filter(pk__gt=pk).order_by('pk').first()
+
+    return render(request, 'detailings/project-detail.html', {'project': project,
+                                                              'project_detail': project_detail,
+                                                              'previous_project': previous_project,
+                                                              'next_project': next_project})

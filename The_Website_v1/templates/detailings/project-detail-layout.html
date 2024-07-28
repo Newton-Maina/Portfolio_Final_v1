@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/project_detail.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+VIC:wght@100..400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: black !important;
+            color: white;
+            overflow-x: hidden;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="{% url 'The_Website_v1:portfolio' %}">Back to Projects</a>
+            <a class="partition" href="#">|</a>
+            <a class="navbar-brand" href="{% url 'The_Website_v1:contact' %}">Contact</a>
+        </nav>
+    </header>
+    <main>
+    <a href="{% url 'The_Website_v1:home' %}" class="p-0">
+        <img src="{% static 'images/logo_01.webp' %}" alt="Newton's Logo" class="logo">
+    </a>
+        {% block content %}{% endblock %}
+    </main>
+    <footer class="text-white text-center py-3">
+        <p>&copy; 2024 Newton Maina. All rights reserved.</p>
+    </footer>
+    {% block js_block %}
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    {% endblock %}
+</body>
+</html>
+

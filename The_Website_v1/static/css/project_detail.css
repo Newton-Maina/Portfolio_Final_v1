@@ -1,0 +1,133 @@
+body {
+    background-color: black !important;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-end !important;
+    padding: 20px;
+}
+
+nav a {
+    position: relative;
+    color: white;
+    margin-right: 20px;
+    font-size: medium !important;
+    text-decoration: none;
+}
+
+nav a::after {
+    content: '';
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: #007bff;
+    transition: width 0.3s ease-in-out;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+nav a:hover {
+    text-decoration: none;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+}
+
+.project-overview {
+    padding: 20px;
+    text-align: center !important;
+}
+
+.project-overview img {
+    max-width: 100%;
+    height: auto;
+}
+
+.project-details {
+    padding: 20px;
+    text-align: center;
+}
+
+.carousel-inner img {
+    max-width: 100%;
+    height: auto;
+}
+
+.btn {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .project-overview .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-overview img, .project-overview h1, .project-overview p {
+        margin-bottom: 20px;
+    }
+
+    .carousel-inner img {
+        width: 100%;
+    }
+}
+
+
+.carousel-item {
+    transition: transform 1.5s ease, opacity 1.5s ease !important;
+}
+
+.carousel-inner img {
+    transition: opacity 1.5s ease-in-out !important;
+    max-height: 700px;
+    max-width: 1200px;
+    width: auto;
+    object-fit: cover;
+    margin: 0 auto;
+}
+.logo{
+    width: 10%;
+    height: 10%;
+    @media (max-width: 768px) {
+        width: 25%;
+        height: 25%;
+    }
+}
+
+.retext {
+    color: white;
+    font-family: "Playwrite AU VIC", system-ui;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.retext1 {
+    color: green;
+    font-family: "Playwrite AU VIC", cursive;
+    font-size: 16px;
+    text-align: center;
+    justify-content: center;
+}
