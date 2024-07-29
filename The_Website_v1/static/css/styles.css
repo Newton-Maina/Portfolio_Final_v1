@@ -14,7 +14,7 @@
 
 }
 
-.profile-section {
+/*.profile-section {
     background-color: #f8f9fa;
     padding-top: 2rem;
 }
@@ -39,7 +39,7 @@
     width: 100%;
     height: unset;
     object-fit: cover;
-}
+}*/
 
 .tech-stack-section {
     padding: 5rem 0; /* Vertical padding for spacing */
