@@ -2,6 +2,7 @@
 /* --------General Layout Start--------- */
 
 .bg-background {
+    background-color: rgba(0,0,0,0.975) !important;
     background-image: url("../images/edit_2.webp");
     background-repeat: no-repeat;
     background-attachment: fixed;
