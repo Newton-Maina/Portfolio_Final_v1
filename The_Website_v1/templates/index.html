@@ -7,6 +7,16 @@
 {% endblock %}
 
 {% block body %}
+
+    <div class="container">
+            <div class="justify-content-start">
+                <div class="text-center">
+                    <div class="profile-img-container">
+                        <img src="{% static 'images/Grad1.JPG' %}" alt="Newton Maina" class="profile-img">
+                    </div>
+                </div>
+            </div>
+    </div>
     <!-- Homepage Section Start -->
     <section class="cta-section">
         <div class="container">
@@ -69,6 +79,9 @@
                             <i class="icofont-addons"></i>...Together, let's embark on a journey towards innovation and excellence,
                             where every step we take is guided by a shared vision of creating impactful and transformative solutions.
                         </h5>
+                    </div>
+                    <div class="text-start ml-4 mt-4 mb-5">
+                        <a href="{% url 'The_Website_v1:about' %}" class="btn btn-primary">More about me...?</a>
                     </div>
                 </div>
             </div>
