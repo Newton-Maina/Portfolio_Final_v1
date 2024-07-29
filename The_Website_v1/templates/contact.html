@@ -1,41 +1,34 @@
 {% extends 'layout.html' %}
-
 {% load static %}
 
 {% block title %}
-
-    <title> Newton Maina || My Contact </title>
-
+    <title>Newton Maina || My Contact</title>
 {% endblock %}
 
 {% block body %}
+<!-- Contact Section Start -->
+<div class="contact-section py-5">
+    <div class="container">
+        <section class="intro-section">
+            <div class="big-circle">
+                <div class="small-circle"></div>
+            </div>
+            <div class="retext">
+                <h1>-Let's Talk Business-</h1>
+            </div>
+        </section>
+        <hr class="my-3">
 
-       <!-- Contact Section Start -->
-    <div class="contact-section py-5">
-        <div class="container">
-            <section class="intro-section">
-                <div class="big-circle">
-                    <div class="small-circle">
-                    </div>
-                </div>
-                <div class="retext">
-                    <h1>-Let's Talk Business-</h1>
-                </div>
-            </section>
-            <hr style="margin-bottom: 20px">
-            <br><br><br>
-
-            <!-- Contact Section Start -->
-            <div class="row">
+        <div class="row">
             <!-- Image Column -->
             <div class="col-md-6">
-                <div class="framing-1" >
-                        <div class="any-frame-1" >
-                            <video autoplay loop muted style="opacity: 0.7" class="img-fluid" >
-                                <source src="{% static 'images/animation-3.webm' %}" type="video/webm">
-                            </video>
-                        </div>
+                <div class="framing-1">
+                    <div class="any-frame-1">
+                        <video autoplay loop muted playsinline preload="auto" class="img-fluid" style="opacity: 0.7">
+                            <source src="{% static 'images/animation-3.webm' %}" type="video/webm">
+                        </video>
                     </div>
+                </div>
             </div>
 
             <!-- Form Column -->
@@ -45,22 +38,13 @@
                         <p class="text-success">{{ success_message }}</p>
                     {% endif %}
 
-                    <div id="thank-you-message">
-                        <center style="margin-top: 20px">
-                            <h2 class="play-write-au-vic">
-                                Thanks {{ name }}!
-                            </h2>
-                            <br>
-                            <p><span class="text-success">|| Message received ||</span><br><br>
-                                I have received your email and will respond shortly...
-                            </p>
-                            <br>
-                            <p class="play-write-au-vic">
-                                Looking forward to engage with you soon.
-                            </p>
-                            <p class="text-success">You will be redirected in 15 seconds</p>
-                        </center>
-                        <br><br>
+                    <div id="thank-you-message" class="text-center mt-4">
+                        <h2 class="play-write-au-vic">Thanks {{ name }}!</h2>
+                        <p><span class="text-success">|| Message received ||</span><br><br>
+                            I have received your email and will respond shortly...
+                        </p>
+                        <p class="play-write-au-vic">Looking forward to engaging with you soon.</p>
+                        <p class="text-success">You will be redirected in 15 seconds</p>
                     </div>
                     <script>
                         setTimeout(function() {
@@ -69,62 +53,56 @@
                                 thankYouMessage.style.display = 'none';
                                 window.location.href = '/';
                             }
-                            }, 15000);
+                        }, 15000);
                     </script>
                 {% else %}
                     {% if error_message %}
                         <p class="text-danger">{{ error_message }}</p>
                     {% endif %}
-                <div class="text-center" style="margin-top: 20px">
-                    <h1 class="play-write-au-vic" style="font-size: 30px">Aiming at Working Together?</h1>
-                    <div class="lines d-flex align-items-center justify-content-center mt-3">
-                        <div class="line"></div>
-                        <div class="diamond mx-3"></div>
-                        <div class="line"></div>
-                    </div>
-                </div>
-                <br><br>
-                <form method="POST" action="#" class="contact-form">
-                    {% csrf_token %}
-                    <!-- Form fields here -->
-                    <div class="row">
-                        <div class="col-lg-6">
-                           <div class="form-group">
-                               <label for="name">Full Name:</label>
-                               <input type="text" class="form-controller" id="name" name="name" placeholder="ex: Kevin Doe" required>
-                           </div>
+                    <div class="text-center mt-4">
+                        <h1 class="play-write-au-vic" style="font-size: 30px">Aiming at Working Together?</h1>
+                        <div class="lines d-flex align-items-center justify-content-center mt-3">
+                            <div class="line"></div>
+                            <div class="diamond mx-3"></div>
+                            <div class="line"></div>
                         </div>
-                        <div class="col-lg-6">
-                            <div class="form-group">
-                                <label for="email">Email:</label>
-                                <input type="email" class="form-controller" id="email" name="email" placeholder="ex: kevindoe@gmail.com" required>
+                    </div>
+                    <form method="POST" action="#" class="contact-form mt-4">
+                        {% csrf_token %}
+                        <!-- Form fields here -->
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label for="name">Full Name:</label>
+                                    <input type="text" class="form-controller" id="name" name="name" placeholder="ex: Kevin Doe" required>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label for="email">Email:</label>
+                                    <input type="email" class="form-controller" id="email" name="email" placeholder="ex: kevindoe@gmail.com" required>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="subject">Subject:</label>
-                        <input type="text" class="form-controller" id="subject" name="subject"  placeholder="Ex: Inquiry on a short term project" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message:</label>
-                        <textarea class="form-controller" id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </form>
+                        <div class="form-group">
+                            <label for="subject">Subject:</label>
+                            <input type="text" class="form-controller" id="subject" name="subject" placeholder="Ex: Inquiry on a short term project" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea class="form-controller" id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
                 {% endif %}
             </div>
         </div>
-        </div>
     </div>
-
-
-
-
-
+</div>
+<!-- Contact Section End -->
 {% endblock %}
 
 {% block js_block %}
-
-    <script type="text/javascript" src="{% static 'js/main.js' %}"></script>
-
+    <!-- Asynchronous JavaScript file -->
+    <script async type="text/javascript" src="{% static 'js/main.js' %}"></script>
 {% endblock %}

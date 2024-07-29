@@ -12,194 +12,173 @@
     {% endblock %}
 
     <!-- Favicon -->
-  <link rel="shortcut icon" type="image/x-icon" href="{% static 'icons/favicon-16x16.png' %}" />
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'icons/favicon-16x16.png' %}" />
 
-
-  <link rel="stylesheet" href="{% static 'plugins/bootstrap/css/bootstrap.min.css' %}">
-
-  <link rel="stylesheet" href="{% static 'plugins/icofont/icofont.min.css' %}">
-
-
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome -->
+    <link rel="stylesheet" href="{% static 'plugins/bootstrap/css/bootstrap.min.css' %}">
     <link rel="stylesheet" href="{% static 'css/styles.css' %}">
 
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600&family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Rubik+Glitch+Pop&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Rubik+Lines&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+VIC:wght@100..400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.js.map">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css.map">
 
+    <!-- Bootstrap CSS from CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
+    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/waypoints/lib/jquery.waypoints.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery.counterup/jquery.counterup.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js.map"></script>
 </head>
 
-<body class="bg-background" id="top" >
+<body class="bg-background" id="top">
 
-    <!--Spinner Section Start-->
+    <!-- Spinner Section Start -->
+    <!-- Spinner Section End -->
 
-    <!--Spinner Section End-->
-
-
-   <!--TopBar Section Start-->
-
+    <!-- TopBar Section Start -->
     <div class="container-fluid px-5 d-none d-lg-block position-relative">
-            <div class="row gx-0">
-                <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
-                    <div class="d-inline-flex align-items-center" style="height: 45px;">
-                        <ul>
-                            <li class="list-inline-item"><a  class="text-white-50" href="mailto:newtonmainag@gmail.com"><i class="icofont-support-faq mr-2 text-white "></i>newtonmainag@gmail.com</a></li>
-                            <li class="list-inline-item text-lg-center"><i class="icofont-location-pin mr-2"></i>Address 32-East-Drive, Roysambu, Nairobi-Kenya</li>
-                        </ul>
-                        </div>
-                </div>
-                <div class="col-lg-4 text-center text-lg-end">
-                    <div class="d-inline-flex align-items-center" style="height: 45px;">
-                       <div class="flex-lg-column">
-                           <div class="text-lg-right top-right-bar mt-2 mt-lg-0">
-                               <a class="text-white-50" href="tel:+254-789-678 905``
-                               .   -.
-                               .1..." ><small>
-                                   <span class="text-white-50">Call Now : </span>
-                                   <span class="position-relative">+254 746 238 725</span></small>
-                               </a>
-                           </div>
-                       </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Top-bar End -->
-
-        <!-- Navbar & Hero Start -->
-            <nav id="main-navbar" class="navbar navbar-expand-lg navbar-light custom-navbar -px-4 px-lg-5 py-2 py-lg-0 py_rg-0">
-                <a href="{% url 'The_Website_v1:home' %}" class="navbar-brand p-0">
-                    <img src="{% static 'images/logo_01.webp' %}" alt="Newton's Logo" class="logo">
-                </a>
-                <button class="navbar-toggler position-relative mr-4" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="fa fa-bars"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-                    <div class="navbar-nav ms-auto py-0">
-                        <ul class="navbar-nav mr-auto ml-5">
-                            <li><a href="{% url 'The_Website_v1:home' %}" class="nav-item{% if navbar == 'home' %}nav-item nav-link active{% endif %} nav-item nav-link">Home</a></li>
-                            <li><a href="{% url 'The_Website_v1:about' %}" class="nav-item{% if navbar == 'about' %}nav-item nav-link active{% endif %} nav-item nav-link">My Story</a></li>
-                            <li><a href="{% url 'The_Website_v1:services' %}" class="nav-item{% if navbar == 'services' %}nav-item nav-link active{% endif %} nav-item nav-link">Services</a></li>
-                            <li><a href="{% url 'The_Website_v1:portfolio' %}" class="nav-item{% if navbar == 'portfolio' %}nav-item nav-link active{% endif %} nav-item nav-link">Portfolio</a></li>
-                            <li><a href="{% url 'The_Website_v1:contact' %}" class="nav-item{% if navbar == 'contact' %}nav-item nav-link active{% endif %} nav-item nav-link">Blog/Articles</a></li>
-                        </ul>
-                    </div>
-                    <ul class="navbar-nav ml-lg-5 ml-4 py-0">
-                        <li class="nav-item {% if navbar == 'contact' %}active{% endif %}"><a href="{% url 'The_Website_v1:contact' %}" class="btn btn-light bg-transparent rounded-pill py-2 px-4 ms-lg-4 text-white-50" style="font-weight: 5">Reach Out</a></li>
+        <div class="row gx-0">
+            <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    <ul>
+                        <li class="list-inline-item"><a class="text-white-50" href="mailto:newtonmainag@gmail.com"><i class="fa-solid fa-envelope mr-2 text-white"></i>newtonmainag@gmail.com</a></li>
+                        <li class="list-inline-item text-lg-center"><i class="fa-solid fa-location-dot mr-2"></i>Address 32-East-Drive, Roysambu, Nairobi-Kenya</li>
                     </ul>
                 </div>
-            </nav>
-    <!--NavBar Section End-->
-
-    {% block body %}
-
-    {% endblock %}
-
-
-
-<footer class="footer section gray-bg">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-4 mr-auto col-sm-6">
-                <div class="widget mb-5 mb-lg-0">
-                    <div class="footer-logo mb-4">
-                        <img src="{% static 'images/logo_01.png' %}" alt="Newton's Logo" class="img-fluid" width="160" height="80">
-                    </div>
-                    <p>
-                        Get a full view on both the mobile and
-                        desktop. Any recommendations, tweaks or
-                        compliments about the website will be highly
-                        appreciated via the contact page. Your emails
-                        are always welcome. Thank You!</p>
-                </div>
             </div>
-
-            <div class="col-lg-4 mr-auto col-sm-6">
-                <div class="widget mb-5 mb-lg-0">
-                    <h4 class="text-white-50 text-capitalize mb-3">Quick Links</h4>
-                    <div class="divider links mb-4"></div>
-
-                    <ul class="list-unstyled footer-menu list-group-horizontal">
-                        <li><a class="nav-link" href="{% url 'The_Website_v1:about' %}"><i class="icofont-arrow-right"></i> My Story</a></li>
-                        <li><a class="nav-link" href="{% url 'The_Website_v1:services' %}"><i class="icofont-arrow-right"></i> My Services</a></li>
-                        <li><a class="nav-link" href="{% url 'The_Website_v1:portfolio' %}"><i class="icofont-arrow-right"></i> Portfolio</a></li>
-                        <li><a class="nav-link" href="{% url 'The_Website_v1:contact' %}"><i class="icofont-arrow-right"></i> Blog/Articles</a></li>
-                        <li><a class="nav-link" href="{% url 'The_Website_v1:contact' %}"><i class="icofont-arrow-right"></i> Reach Out</a></li>
-                    </ul>
-                </div>
-                <ul class="list-inline footer-socials mt-4">
-                    <li class="list-inline-item"><a href="https://twitter.com/alynosbiotech"><i class="icofont-facebook"></i></a></li>
-                    <li class="list-inline-item"><a href="https://twitter.com/alynosbiotech"><i class="icofont-twitter"></i></a></li>
-                    <li class="list-inline-item"><a href="https://www.facebook.com/alynosbiotech"><i class="icofont-github"></i></a></li>
-                    <li class="list-inline-item"><a href="https://twitter.com/alynosbiotech"><i class="icofont-reddit"></i></a></li>
-                    <li class="list-inline-item"><a href="https://www.linkedin.com/company/alynosbiotech/"><i class="icofont-linkedin"></i></a></li>
-                    </ul>
-            </div>
-
-            <div class="col-lg-3 col-md-6 col-sm-6">
-                <div class="widget widget-contact mb-5 mb-lg-0">
-                    <h4 class="text-white-50 text-capitalize mb-3">Get in Touch</h4>
-                    <div class="divider mb-4"></div>
-
-                    <div class="footer-contact-block mb-4">
-                        <div class="icon d-flex align-items-center">
-                            <i class="icofont-email mr-3"></i>
-                            <span class="h6 mb-0">My Email</span>
+            <div class="col-lg-4 text-center text-lg-end">
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    <div class="flex-lg-column">
+                        <div class="text-lg-right top-right-bar mt-2 mt-lg-0">
+                            <a class="text-white-50" href="tel:+254-746-238-725"><small>
+                                <span class="text-white-50">Call Now : </span>
+                                <span class="position-relative">+254 746 238 725</span></small>
+                            </a>
                         </div>
-                        <h5 class="mt-2"><a href="mailto:newtonmainag@gmail.com"><small>newtonmainag@gmail.com</small></a></h5>
-                        <br>
-                        <div class="icon d-flex align-items-center">
-                            <i class="icofont-phone mr-3"></i>
-                            <span class="h6 mb-0">Make A Call</span>
-                        </div>
-                        <h5 class="mt-2"><a href="tel:+254-789-678 905"><small>+254-746 238 725</small></a></h5>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="footer-btm py-3 mt-2">
-            <div class="row align-items-center justify-content-between">
-                <div class="col-lg-6">
-                    <div class="copyright">
-                        &copy;.2024 Copyright Reserved to <span class="text-color">|| Newton Maina.</span>
-                        <a href="#" class="btn button back-to-top"><i class="fa fa-long-arrow-up" style="font-size: large"></i></a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <!-- Top-bar End -->
 
+    <!-- Navbar & Hero Start -->
+    <nav id="main-navbar" class="navbar navbar-expand-lg navbar-light custom-navbar -px-4 px-lg-5 py-2 py-lg-0 py_rg-0">
+        <a href="{% url 'The_Website_v1:home' %}" class="navbar-brand p-0">
+            <img src="{% static 'images/logo_01.webp' %}" alt="Newton's Logo" class="logo">
+        </a>
+        <button class="navbar-toggler position-relative mr-4" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="fa fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <div class="navbar-nav ms-auto py-0">
+                <ul class="navbar-nav mr-auto ml-5">
+                    <li><a href="{% url 'The_Website_v1:home' %}" class="nav-item{% if navbar == 'home' %}nav-item nav-link active{% endif %} nav-item nav-link">Home</a></li>
+                    <li><a href="{% url 'The_Website_v1:about' %}" class="nav-item{% if navbar == 'about' %}nav-item nav-link active{% endif %} nav-item nav-link">My Story</a></li>
+                    <li><a href="{% url 'The_Website_v1:services' %}" class="nav-item{% if navbar == 'services' %}nav-item nav-link active{% endif %} nav-item nav-link">Services</a></li>
+                    <li><a href="{% url 'The_Website_v1:portfolio' %}" class="nav-item{% if navbar == 'portfolio' %}nav-item nav-link active{% endif %} nav-item nav-link">Portfolio</a></li>
+                    <li><a href="{% url 'The_Website_v1:contact' %}" class="nav-item{% if navbar == 'contact' %}nav-item nav-link active{% endif %} nav-item nav-link">Blog/Articles</a></li>
+                </ul>
+            </div>
+            <ul class="navbar-nav ml-lg-5 ml-4 py-0">
+                <li class="nav-item {% if navbar == 'contact' %}active{% endif %}"><a href="{% url 'The_Website_v1:contact' %}" class="btn btn-light bg-transparent rounded-pill py-2 px-4 ms-lg-4 text-white-50" style="font-weight: 5">Reach Out</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- NavBar Section End -->
 
+    {% block body %}
 
+    {% endblock %}
 
+    <footer class="footer section gray-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mr-auto col-sm-6">
+                    <div class="widget mb-5 mb-lg-0">
+                        <div class="footer-logo mb-4">
+                            <img src="{% static 'images/logo_01.png' %}" alt="Newton's Logo" class="img-fluid" width="160" height="80">
+                        </div>
+                        <p>
+                            Get a full view on both the mobile and
+                            desktop. Any recommendations, tweaks or
+                            compliments about the website will be highly
+                            appreciated via the contact page. Your emails
+                            are always welcome. Thank You!</p>
+                    </div>
+                </div>
 
+                <div class="col-lg-4 mr-auto col-sm-6">
+                    <div class="widget mb-5 mb-lg-0">
+                        <h4 class="text-white-50 text-capitalize mb-3">Quick Links</h4>
+                        <div class="divider links mb-4"></div>
 
-</footer>
+                        <ul class="list-unstyled footer-menu list-group-horizontal">
+                            <li><a class="nav-link" href="{% url 'The_Website_v1:about' %}"><i class="fa-solid fa-arrow-right"></i> My Story</a></li>
+                            <li><a class="nav-link" href="{% url 'The_Website_v1:services' %}"><i class="fa-solid fa-arrow-right"></i> My Services</a></li>
+                            <li><a class="nav-link" href="{% url 'The_Website_v1:portfolio' %}"><i class="fa-solid fa-arrow-right"></i> Portfolio</a></li>
+                            <li><a class="nav-link" href="{% url 'The_Website_v1:contact' %}"><i class="fa-solid fa-arrow-right"></i> Blog/Articles</a></li>
+                            <li><a class="nav-link" href="{% url 'The_Website_v1:contact' %}"><i class="fa-solid fa-arrow-right"></i> Reach Out</a></li>
+                        </ul>
+                    </div>
+                    <ul class="list-inline footer-socials mt-4">
+                        <li class="list-inline-item"><a href="https://twitter.com/alynosbiotech"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="https://twitter.com/alynosbiotech"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.facebook.com/alynosbiotech"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li class="list-inline-item"><a href="https://twitter.com/alynosbiotech"><i class="fa-brands fa-reddit"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.linkedin.com/company/alynosbiotech/"><i class="fa-brands fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
 
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="widget widget-contact mb-5 mb-lg-0">
+                        <h4 class="text-white-50 text-capitalize mb-3">Get in Touch</h4>
+                        <div class="divider mb-4"></div>
+
+                        <div class="footer-contact-block mb-4">
+                            <div class="icon d-flex align-items-center">
+                                <i class="fa-solid fa-envelope mr-3"></i>
+                                <span class="h6 mb-0">My Email</span>
+                            </div>
+                            <h5 class="mt-2"><a href="mailto:newtonmainag@gmail.com"><small>newtonmainag@gmail.com</small></a></h5>
+                            <br>
+                            <div class="icon d-flex align-items-center">
+                                <i class="fa-solid fa-phone mr-3"></i>
+                                <span class="h6 mb-0">Make A Call</span>
+                            </div>
+                            <h5 class="mt-2"><a href="tel:+254-789-678-905"><small>+254-746 238 725</small></a></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-btm py-3 mt-2">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-lg-6">
+                        <div class="copyright">
+                            &copy; 2024 Copyright Reserved to <span class="text-color">|| Newton Maina.</span>
+                            <a href="#" class="btn button back-to-top"><i class="fa-solid fa-arrow-up" style="font-size: large"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" defer></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery.counterup/jquery.counterup.min.js" defer></script>
 
-{% block js_block %}
-{% endblock %}
-
-
+    {% block js_block %}
+    {% endblock %}
 
 </body>
 </html>

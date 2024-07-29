@@ -26,9 +26,9 @@
                     <a href="{% url 'The_Website_v1:project_detail' project.pk %}" class="view-case-button">View Full Case</a>
                 </div>
                 <div class="portfolio-images">
-                    <img src="{{ project.image1.url }}" alt="Image 1">
-                    <img src="{{ project.image2.url }}" alt="Image 2">
-                    <img src="{{ project.image3.url }}" alt="Image 3">
+                    <img src="{{ project.image1.url }}" alt="Image 1" loading="lazy">
+                    <img src="{{ project.image2.url }}" alt="Image 2" loading="lazy">
+                    <img src="{{ project.image3.url }}" alt="Image 3" loading="lazy">
                 </div>
             </div>
         {% endfor %}
@@ -55,6 +55,5 @@
 {% endblock %}
 
 {% block js_block %}
-    <script type="text/javascript" src="{% static 'js/main.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/main.min.js' %}"></script>
 {% endblock %}
-
