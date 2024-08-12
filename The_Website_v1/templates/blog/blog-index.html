@@ -20,7 +20,7 @@
       {% for post in page_obj %}
       <div class="card mb-4" style="box-shadow: 0 15px 15px rgba(128, 128, 128, 0.5);">
         <div class="card-body">
-          <h3 class="">{{ post.title }}</h3>
+          <h3 class="" style= "font-size: 2.3em; font-weight: bold; margin-bottom: 0.5em;">{{ post.title }}</h3>
           <p class="card-text text-muted h6">{{ post.author }} | {{ post.updated_on }}</p>
           <p class="card-text">{{ post.content|slice:":180"|safe }}</p>
           <a href="{% url 'The_Website_v1:blog_detail' post.slug %}" class="btn btn-primary">Read More &rarr;</a>
