@@ -131,3 +131,14 @@ footer {
     text-align: center;
     justify-content: center;
 }
+
+h1.display-4 {
+    color: #66ccff;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+p.lead {
+    color: #b3c7d6;
+    font-size: 1.25rem;
+}

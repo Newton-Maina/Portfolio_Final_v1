@@ -1,8 +1,10 @@
-from django.shortcuts import render, get_object_or_404
-from .models import Service, Project, ProjectDetail
+from django.http import HttpResponseRedirect
+from django.shortcuts import render, get_object_or_404, redirect
+from .models import Service, Project, ProjectDetail, Post
 from django.core.mail import send_mail, BadHeaderError
 from socket import gaierror
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
+from django.views import generic
 
 
 # Create your views here.
@@ -20,7 +22,7 @@ def service(request):
 
 
 def portfolio(request):
-    projects_list = Project.objects.all()
+    projects_list = Project.objects.all().order_by('id')
     paginator = Paginator(projects_list, 3)
 
     page_number = request.GET.get('page')
@@ -90,3 +92,25 @@ def project_detail(request, pk):
                                                               'project_detail': project_detail,
                                                               'previous_project': previous_project,
                                                               'next_project': next_project})
+
+
+def handle_url_existence(request, pk):
+    project = get_object_or_404(Project, pk=pk)
+    project_detail, created = ProjectDetail.objects.get_or_create(project=project)
+
+    if not project_detail.live_url:
+        return render(request, 'detailings/404-error.html', status=404)
+
+    return HttpResponseRedirect(project_detail.live_url)
+
+
+class PostList(generic.ListView):
+    queryset = Post.objects.filter(status=1).order_by('-created_on')
+    template_name = 'blog/blog-index.html'
+    context_object_name = 'posts'
+    paginate_by = 3
+
+
+class DetailView(generic.DetailView):
+    model = Post
+    template_name = 'blog/blog-detail.html'

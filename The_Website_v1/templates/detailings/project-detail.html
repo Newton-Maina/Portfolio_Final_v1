@@ -81,7 +81,7 @@
                 <img src="{% static 'images/phone_mockup2.png' %}" alt="Laptop Mockup" class="img-fluid" width="90%">
             </div>
             <div class="col-md-6 align-content-center">
-                <p>{{ project_detail.detail_paragraph3 }}</p>
+                <p class="text-sm-left">{{ project_detail.detail_paragraph3 }}</p>
             </div>
         </div>
 
@@ -99,7 +99,7 @@
 
 
     <div class="container text-center project-buttons" style="padding: 50px 0;">
-        <a href="{{ project_detail.live_url }}" target="_blank" class="btn btn-primary">View Project Live</a>
+        <a href="{% url 'The_Website_v1:handle_url_existence' project.pk %}" target="_blank" class="btn btn-primary">View Project Live</a>
         <a href="{{ project_detail.github_url }}" target="_blank" class="btn btn-secondary">View on GitHub</a>
     </div>
 

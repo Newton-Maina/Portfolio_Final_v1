@@ -15,6 +15,62 @@
 
 }
 
+.button-group {
+    display: flex;
+    gap: 20px;
+    /* Space between buttons */
+    width: max-content;
+}
+
+.neon-button {
+    background-color: transparent;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    position: relative;
+    text-decoration: none;
+    overflow: hidden;
+    transition: color 0.3s ease;
+    z-index: 1;
+}
+
+.neon-button::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border-radius: 5px;
+    background: linear-gradient(45deg, cyan, blue);
+    background-size: 200%;
+    z-index: -1;
+    transition: opacity 0.3s ease;
+    animation: neon 4s linear infinite;
+}
+
+@keyframes neon {
+    0% {
+        background-position: 0 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+.neon-button:hover {
+    color: cyan;
+}
+
+.neon-button:hover::before {
+    opacity: 1;
+}
+
 .small-service-item {
     margin-top: 20px;
     background: rgba(0, 123, 255, 0.1);

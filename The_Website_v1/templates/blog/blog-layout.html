@@ -1,0 +1,73 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="">
+
+<head>
+  <title>Newton - My Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Bootstrap cdn -->
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/journal/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cyborg/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+VIC:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'icons/favicon-16x16.png' %}" />
+
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/sketchy/bootstrap.min.css"> -->
+</head>
+
+<body>
+  <!-- Navigation -->
+ <nav class="navbar bg-dark" data-bs-theme="dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="{% url 'The_Website_v1:blog_home' %}">
+      Newton Maina's Blog
+    </a>
+
+    <div class="flex-container" id="navbarBlog">
+      <a class="nav-link active" href="{% url 'The_Website_v1:home' %}">Back Home</a>
+      <a class="nav-link" href="{% url 'The_Website_v1:portfolio' %}">Projects</a>
+      <a class="nav-link" href="{% url 'The_Website_v1:contact' %}">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<style>
+  .navbar-brand {
+    font-weight: bold;
+    font-family: "Playwrite AU VIC", sans-serif !important;
+    color: #f8f9fa !important;
+  }
+
+  .flex-container {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .nav-link {
+    color: #f8f9fa;
+    padding: 10px 15px;
+    font-size: 1.1rem;
+    font-family: "Playwrite AU VIC", sans-serif !important;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-link.active {
+    color: #007bff !important;
+    background-color: rgba(0, 123, 255, 0.1);
+    border-radius: 5px;
+  }
+</style>
+
+  {% block content %}
+  <!-- Content Goes here -->
+  {% endblock content %}
+  <!-- Footer -->
+  <footer class="py-3 bg-grey">
+    <p class="m-0 text-dark text-center ">Copyright &copy; 2024 Newton Maina || All Rights Reserved </p>
+  </footer>
+</body>
+
+</html>
+
