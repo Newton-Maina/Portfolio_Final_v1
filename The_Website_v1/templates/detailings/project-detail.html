@@ -9,7 +9,7 @@
     <div class="container-fluid project-overview" style="padding: 30px 0;">
         <div class="row" style="margin-bottom: 30px;">
             <div class="col-md-6 text-center">
-                <img src="{% static 'images/laptop_mockup.png' %}" alt="Laptop Mockup" class="img-fluid" width="70%" height="70%">
+                <img src="{{project_detail.laptop_mockup.url}}" alt="Laptop Mockup" class="img-fluid" width="70%" height="70%">
             </div>
             <div class="col-md-6 text-sm-left align-content-center">
                 <h1>Welcome to {{ project.title }}</h1>
@@ -63,7 +63,7 @@
                 <p>{{ project_detail.detail_paragraph1 }}</p>
             </div>
             <div class="col-md-6 text-center">
-                <img src="{% static 'images/phone_mockup.png' %}" alt="Laptop Mockup" class="img-fluid" width="35%">
+                <img src="{{project_detail.phone_mockup_01.url}}" alt="Laptop Mockup" class="img-fluid" width="35%">
             </div>
         </div>
 
@@ -78,7 +78,7 @@
 
         <div class="row mb-5 justify-content-center">
             <div class="col-md-6 text-center">
-                <img src="{% static 'images/phone_mockup2.png' %}" alt="Laptop Mockup" class="img-fluid" width="90%">
+                <img src="{{project_detail.phone_mockup_02.url}}" alt="Laptop Mockup" class="img-fluid" width="90%">
             </div>
             <div class="col-md-6 align-content-center">
                 <p class="text-sm-left">{{ project_detail.detail_paragraph3 }}</p>
@@ -86,7 +86,7 @@
         </div>
 
         <p class="text-sm-center">_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _</p>
-        <p>{{ project_detail.detail_paragraph3 }}</p>
+        <p>{{ project_detail.detail_paragraph4 }}</p>
     </div>
 
     <div class="container text-center test_data-buttons">

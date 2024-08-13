@@ -49,7 +49,7 @@
                 <div class="d-inline-flex align-items-center" style="height: 45px;">
                     <ul>
                         <li class="list-inline-item"><a class="text-white-50" href="mailto:newtonmainag@gmail.com"><i class="fa-solid fa-envelope mr-2 text-white"></i>newtonmainag@gmail.com</a></li>
-                        <li class="list-inline-item text-lg-center"><i class="fa-solid fa-location-dot mr-2"></i>Address 32-East-Drive, Roysambu, Nairobi-Kenya</li>
+                        <li class="list-inline-item text-lg-center"><i class="fa-solid fa-location-dot mr-2"></i>Address - 00100, Nairobi-Kenya</li>
                     </ul>
                 </div>
             </div>
@@ -84,11 +84,11 @@
                             <li><a href="{% url 'The_Website_v1:about' %}" class="nav-item{% if navbar == 'about' %}nav-item nav-link active{% endif %} nav-item nav-link">My Story</a></li>
                             <li><a href="{% url 'The_Website_v1:services' %}" class="nav-item{% if navbar == 'services' %}nav-item nav-link active{% endif %} nav-item nav-link">Services</a></li>
                             <li><a href="{% url 'The_Website_v1:portfolio' %}" class="nav-item{% if navbar == 'portfolio' %}nav-item nav-link active{% endif %} nav-item nav-link">Portfolio</a></li>
-                            <li><a href="{% url 'The_Website_v1:blog_home' %}" class="nav-item{% if navbar == 'contact' %}nav-item nav-link active{% endif %} nav-item nav-link">Blog/Articles</a></li>
+                            <li><a href="{% url 'The_Website_v1:blog_home' %}" class="nav-item{% if navbar == 'contact' %}nav-item nav-link{% endif %} nav-item nav-link">Blog/Articles</a></li>
                         </ul>
                     </div>
                     <ul class="navbar-nav ml-lg-5 ml-4 py-0">
-                        <li class="nav-item {% if navbar == 'contact' %}active{% endif %}"><a href="{% url 'The_Website_v1:contact' %}" class="btn btn-light bg-transparent rounded-pill py-2 px-4 ms-lg-4 text-white-50" style="font-weight: 5">Reach Out</a></li>
+                        <li class="nav-item {% if navbar == 'contact' %} text-success{% endif %}"><a href="{% url 'The_Website_v1:contact' %}" class="btn btn-light bg-transparent rounded-pill py-2 px-4 ms-lg-4 text-white-50" style="font-weight: 5">Reach Out</a></li>
                     </ul>
                 </div>
             </nav>

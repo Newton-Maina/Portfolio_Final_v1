@@ -1082,15 +1082,20 @@ ol li h5 {
     position: absolute;
     top: 20px;
     left: 20px;
+    width: 180%;
 }
 
 .portfolio-description {
     margin: 0;
     position: relative;
     top: 50%;
-    left: 20px;
+    left: 15px;
     transform: translateY(-50%);
     width: 100%;
+    @media (max-width: 412px) {
+        width: 120%;
+    }
+
 }
 
 .view-case-button {
@@ -1101,7 +1106,7 @@ ol li h5 {
     color: #000;
     text-decoration: none;
     position: absolute;
-    bottom: 15px;
+    bottom: 10px;
     left: 20px;
     border-radius: 5px;
     transition: background-color 0.3s, color 0.3s;
@@ -1117,6 +1122,7 @@ ol li h5 {
     position: relative;
     height: 350px; /* Adjust height as needed */
     width: 100%;
+    left: 20px;
 }
 
 .portfolio-images img {

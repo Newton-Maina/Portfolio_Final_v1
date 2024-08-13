@@ -19,12 +19,12 @@
   <!-- Navigation -->
  <nav class="navbar bg-dark" data-bs-theme="dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href="{% url 'The_Website_v1:blog_home' %}">
-      Newton Maina's Blog
+    <a href="{% url 'The_Website_v1:home' %}" class="p-0">
+        <img src="{% static 'images/logo_01.webp' %}" alt="Newton's Logo" class="logo">
     </a>
 
     <div class="flex-container" id="navbarBlog">
-      <a class="nav-link active" href="{% url 'The_Website_v1:home' %}">Back Home</a>
+      <a class="nav-link active" href="{% url 'The_Website_v1:blog_home' %}">Posts</a>
       <a class="nav-link" href="{% url 'The_Website_v1:portfolio' %}">Projects</a>
       <a class="nav-link" href="{% url 'The_Website_v1:contact' %}">Contact</a>
     </div>
@@ -42,6 +42,17 @@
     display: flex;
     justify-content: flex-end;
   }
+
+  .logo{
+    width: 40%;
+    height: 40%;
+    @media (max-width: 768px) {
+        width: 40%;
+        height: 40%;
+        margin-left: 80px;
+        margin-bottom: 10px;
+    }
+}
 
   .nav-link {
     color: #f8f9fa;
