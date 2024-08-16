@@ -39,6 +39,7 @@ def contact(request):
     if request.method == "POST":
         name = request.POST.get('name', '')
         email = request.POST.get('email', '')
+        phone = request.POST.get('phone', '')
         subject = request.POST.get('subject', '')
         message = request.POST.get('message', '')
 
@@ -47,7 +48,7 @@ def contact(request):
                 # Send email
                 send_mail(
                     f'Message from {name}',
-                    f'Senders Email: {email} -- Details on message: {message}',
+                    f'Senders Email: {email} -- Subject: {subject} -- Phone: {phone} -- Details on message: {message}',
                     email,
                     ['newtonmainag@gmail.com'],
                 )

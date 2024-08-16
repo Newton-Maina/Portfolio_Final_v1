@@ -21,7 +21,7 @@
 
         <div class="row">
             <!-- Image Column -->
-            <div class="col-md-6">
+            <div class="col-md-6" style="margin-top: 50px">
                 <div class="framing-1">
                     <div class="any-frame-1">
                         <video autoplay loop muted playsinline preload="auto" class="img-fluid" style="opacity: 0.7">
@@ -67,7 +67,7 @@
                             <div class="line"></div>
                         </div>
                     </div>
-                    <form method="POST" action="#" class="contact-form mt-4">
+                    <form method="POST" action="#" class="contact-form mt-2">
                         {% csrf_token %}
                         <!-- Form fields here -->
                         <div class="row">
@@ -83,6 +83,10 @@
                                     <input type="email" class="form-controller" id="email" name="email" placeholder="ex: kevindoe@gmail.com" required>
                                 </div>
                             </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone:</label>
+                            <input type="text" class="form-controller" id="phone" name="phone" placeholder="ex: +254 700 000 000" required>
                         </div>
                         <div class="form-group">
                             <label for="subject">Subject:</label>
